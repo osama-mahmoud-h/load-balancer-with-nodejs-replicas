@@ -27,7 +27,18 @@ This project demonstrates the setup of a load-balanced Node.js application using
 5. Access the application in your browser at [http://localhost:7002](http://localhost:7001).
 
 6. Test load balancing with concurrent requests using tools like Postman or cURL.
-
+7. our server make CPU-intensive calculation (calulate fibonacci serise recursivly)
+8. in postman make add two GET request , with the same url (http://localhost:7002/fibonacci/41) .
+9. reponse will be diffrent in each case , like ({
+    "result": 165580141,
+    "instance": "2"
+}, 
+{
+    "result": 165580141,
+    "instance": "1"
+}
+)
+10. as you can see above reponse , load distributed between two servers
 ## Project Structure
 
 - `app/` - Contains Node.js application code.
