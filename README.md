@@ -44,8 +44,8 @@ NGINX serves as a load balancer, evenly distributing requests among multiple Nod
 Load balancing enables efficient handling of concurrent requests across Node.js instances. This demonstrates the effectiveness of load balancing.
 
 ## example 
-![Alt Text]("./imgs/rep1.png")
-![Alt Text]("./imgs/rep2.png")
+![Alt Text](./imgs/rep1.png)
+![Alt Text](./imgs/rep2.png)
 
 ## Conclusion
 
