@@ -24,7 +24,7 @@ This project demonstrates the setup of a load-balanced Node.js application using
 4. Build and start containers using Docker Compose:
 
 
-5. Access the application in your browser at [http://localhost:7001](http://localhost:7001).
+5. Access the application in your browser at [http://localhost:7002](http://localhost:7001).
 
 6. Test load balancing with concurrent requests using tools like Postman or cURL.
 
