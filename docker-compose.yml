@@ -1,0 +1,37 @@
+version: '3'
+services:
+  node-instance1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "6001:6001"
+    networks:
+      - my-network
+    environment:
+      INSTANCE_ID : 1  
+
+  node-instance2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "6002:6001"
+    networks:
+      - my-network
+    environment:
+      INSTANCE_ID : 2
+
+      
+  nginx-load-balancer:
+    image: nginx:latest
+    volumes:
+      - /home/osama/OSAMA/Nodejs-projects/SYSTEM_DESIGN/node-replica/config/nginx.config:/etc/nginx/nginx.conf
+    ports:
+      - "7002:80"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
